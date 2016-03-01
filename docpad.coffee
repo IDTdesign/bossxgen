@@ -24,7 +24,7 @@ docpadConfig = {
 			# The cascading stylesheets for the site.
 			# The website's styles
 			styles: [
-				'/styles/bossxgen.css'
+				'/styles/docs.css'
 			]
 
 			# The JavaScript files for the site.

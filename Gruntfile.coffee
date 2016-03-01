@@ -52,15 +52,15 @@ module.exports = (grunt) ->
 
 		# compile less and generate map files
 		less:
-			compileBoss:
+			docs:
 				options:
-					strictMath: true
+					strictMath: false
 					sourceMap: true
 					outputSourceFiles: true
-					sourceMapURL: 'bossrevolution.css.map'
-					sourceMapFilename: 'out/styles/bossrevolution.css.map'
+					sourceMapURL: 'docs.css.map'
+					sourceMapFilename: 'out/styles/docs.css.map'
 				files:
-					'out/styles/bossrevolution.css': 'src/raw/styles/bossrevolution.css.less'
+					'out/styles/docs.css': 'src/raw/styles/docs.less'
 			compileBootstrap:
 				options:
 					strictMath: true
@@ -70,15 +70,6 @@ module.exports = (grunt) ->
 					sourceMapFilename: 'out/styles/bootstrap.css.map'
 				files:
 					'out/styles/bootstrap.css': 'src/raw/styles/bootstrap.css.less'
-			compileBsTheme:
-				options:
-					strictMath: true
-					sourceMap: true
-					outputSourceFiles: true
-					sourceMapURL: 'bootstrap-theme.css.map'
-					sourceMapFilename: 'out/styles/bootstrap-theme.css.map'
-				files:
-					'out/styles/bootstrap-theme.css': 'src/raw/styles/bootstrap-theme.css.less'
 
 		# add vendor prefixes
 		autoprefixer:
@@ -100,7 +91,7 @@ module.exports = (grunt) ->
 			bossout:
 				options:
 					map: true
-				src: 'out/styles/bossrevolution.css'
+				src: 'out/styles/docs.css'
 
 		modernizr:
 			dist:
@@ -297,6 +288,13 @@ module.exports = (grunt) ->
 			out: ['<%= docpad.out %>']
 
 		copy:
+			uicomponents:
+				files: [
+					expand: true
+					cwd: './uicomponents'
+					src: ['**']
+					dest: './out/uicomponents'
+				]
 			main:
 				files: [
 					'out/vendor/animate.css/animate.min.css':'bower_components/animate.css/animate.min.css',
@@ -337,6 +335,11 @@ module.exports = (grunt) ->
 					stdout: true
 					async: false
 				command: 'docpad deploy-ghpages --env static'
+			custom:
+				options:
+					stdout: true
+					async: false
+				command: 'docpad render ./uicomponents/bettertext/demo.html.md > ./out/uicomponents/bettertext/index.html'
 
 	# measures the time each task takes
 	require('time-grunt')(grunt);
@@ -364,8 +367,8 @@ module.exports = (grunt) ->
 	grunt.registerTask 'makesprites',   ['svgstore', 'svg2string', 'replace:sprites']
 	grunt.registerTask 'optimizeimg',   ['svg2png:src', 'newer:imagemin:src']
 	grunt.registerTask 'preprocess',    ['makesprites', 'optimizeimg']
-	grunt.registerTask 'prepare',       []
-	grunt.registerTask 'postprocess',   ['less']
+	grunt.registerTask 'prepare',       ['copy:uicomponents']
+	grunt.registerTask 'postprocess',   ['less', 'autoprefixer']
 	grunt.registerTask 'generate',      ['clean:out', 'shell:docpad', 'prepare', 'postprocess']
 	grunt.registerTask 'server',        ['connect', 'watch:src', 'watch:out']
 	grunt.registerTask 'run2',          ['generate', 'server']
