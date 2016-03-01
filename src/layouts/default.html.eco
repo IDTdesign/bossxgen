@@ -3,9 +3,6 @@
 <head>
     <!-- Rendered with Eco -->
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="X-UA-TextLayoutMetrics" content="snap-vertical" />
-    <meta http-equiv="X-UA-CSSOMElementFloatMetrics" content="false" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Site Properities -->
@@ -13,68 +10,26 @@
     <meta name="description" content="<%= @site.description %>" />
     <meta name="keywords" content="<%= @site.keywords %>" />
 
-    <!-- OpenGraph -->
-    <%- @partial("site/opengraph") %>
-
     <!-- DocPad Meta -->
     <%- @getBlock('meta').toHTML() %>
 
     <!-- DocPad Styles + Our Own -->
     <%- @getBlock('styles').add(@getUrl(@site.styles)).add(@getUrl(@document.styles)).toHTML() %>
 
-    <script src="<%= @getUrl('/vendor/modernizr/modernizr.min.js') %>"></script>
-    <script src="<%= @getUrl('/icons/svg-icons.js') %>"></script>
+    <!--script src="<%= @getUrl('/vendor/modernizr/modernizr.min.js') %>"></script>
+    <script src="<%= @getUrl('/icons/svg-icons.js') %>"></script-->
 </head>
-<body data-spy="scroll" data-target=".local-nav" data-offset="80">
-    <%= @partial('site/svgcontainer') %>
+<body>
+    <% #@partial('site/svgcontainer') %>
 
     <div class="allpage page-canvas">
-        <div class="visible-xs">
-            <%- @partial('site/mobilenav-toppanel') %>
-        </div>
-        <header class="allpage--header hidden-xs">
-            <div class="allpage--headerbg"></div>
-            <div class="allpage--headerbg2"></div>
-            <div class="container">
-                <div class="logo">
-                    <a class="logo--link" href="<%= @getUrl('/') %>"><img src="<%= @getUrl('/img/logo-bossrevolution.png') %>" alt="BossRevolution"></a>
-                </div>
-
-                <nav class="navbar navbar-topline">
-                    <%- @partial("site/topline-menu") %>
-                </nav>
-
-                <nav class="navbar navbar-bossmain hidden-xs" role="navigation">
-                    <%- @partial('site/mainmenu') %>
-                </nav>
-            </div>
-        </header>
 
         <div class="allpage--body">
             <%- @content %>
         </div>
 
-        <%- @partial('site/allpagefooter') %>
+    </div>
 
-    </div>
-    <div id="mobileNav" class="modal mobilenav" tabindex="-1" role="dialog">
-        <div class="mobilenav-container">
-            <%- @partial('site/mobilenav-toppanel') %>
-            <div class="mobilenav-page" id="commonNav" style="display: none;">
-                <%- @partial('site/menupopup') %>
-            </div>
-            <div class="mobilenav-page" id="mobileAccount" style="display: none;">
-                <%- @partial('site/myaccountmenu', {menutilesclass: 'menutiles-simple', menutilesid: 'accountmenu'}) %>
-            </div>
-            <div class="mobilenav-page" id="mobileLocales" style="display: none;">
-                <%- @partial('site/locales') %>
-            </div>
-        </div>
-    </div>
-    <div class="fixed-panel-container">
-        <%- @partial('site/mobilenav-bottompanel') %>
-    </div>
-    <!-- DocPad Scripts + Our Own -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <%- @getBlock('scripts').add(@getUrl(@site.scripts)).add(@getUrl(@document.scripts)).toHTML() %>
 </body>
