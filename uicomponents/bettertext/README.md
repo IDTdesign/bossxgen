@@ -57,7 +57,7 @@ Setting up basic parameters:
 }
 ```
 
-Deep customization: you able to redefine any formula in calculation settings inside `bettertext-settings` mixin.
+Deep customization: you able to redefine any formula in calculation section inside `bettertext-settings` mixin.
 
 ```less
 @import (less) "uicomponents/bettertext.less";

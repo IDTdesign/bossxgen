@@ -6,7 +6,7 @@ Adjust spacing between columns (applies to paddings):
 * `gutter-quarter` — 4 times smaller,
 * `gutter-zero` — reset padding to 0.
 
-Based on `@gutter-width` variable:  
+Based on `@gutter-width` variable.
 
 Each class has two sets of independed modifiers:
 
@@ -67,13 +67,13 @@ Default settings:
 Running with default parameters:
 
 ```less
-@import (less) "path_to_component/_gutter.less";
+@import (less) "uicomponents/gutter.less";
 ```
 
 Redefining gutter-width and breakpoints:
 
 ```less
-@import (less) "path_to_component/_gutter.less";
+@import (less) "uicomponents/gutter.less";
 
 .gutter-settings() {
     @gutter-width: 60px;
@@ -95,7 +95,7 @@ Redefining gutter-width and breakpoints:
 Renaming output classnames:
 
 ```less
-@import (less) "path_to_component/_gutter.less";
+@import (less) "uicomponents/gutter.less";
 
 .gutter-settings() {
     // names for breakpoint suffixes
