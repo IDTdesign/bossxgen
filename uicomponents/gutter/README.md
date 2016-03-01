@@ -31,7 +31,7 @@ Each class has two sets of independed modifiers:
 
 ## Default values
 
-Conponent has global mixin with settings named `.gutter-settings();` and global variable `gutter-render` which contains all code.
+Component has global mixin with settings named `.gutter-settings();` and global variable `gutter-render` which contains all code.
 
 Default settings:
 
