@@ -9,6 +9,7 @@
     @font2: sans-serif;
     @scale1: 1.125;
     @scale2: 1.250;
+    @section-pad: 5vw;
 
     @bettertext-breakpoint: ~"(min-width: 768px)";
 
@@ -64,22 +65,39 @@
     @h3h4-mt: unit( @h4-lh ,em);
     @h4h5-mt: 0;
     @h5h6-mt: 0;
+
+    //article and section
+    @section-pt: round(@h2-mt / 2);
+    @section-pb: round(@h2-mt / 2);
 }
 
 
 @bettertext: {
+
     body {
       font-family: @font1;
       font-size: @fz;
       line-height: @lh;
     }
 
+    section:not([class]) {
+        padding: @section-pad;
+    }
+
     article:not([class]) {
-        padding: 50px 5%;
+        padding: @section-pad;
 
         & section:not([class]) {
-            padding-top: 25px;
-            padding-bottom: 25px;
+            padding-left: 0;
+            padding-right: 0;
+
+            &:first-child {
+                padding-top: 0;
+            }
+
+            &:last-child {
+                padding-bottom: 0;
+            }
         }
     }
 

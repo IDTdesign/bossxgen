@@ -266,7 +266,15 @@ module.exports = (grunt) ->
 				options:
 					livereload: true
 			less:
-				files: ['./src/raw/styles/**/*.*']
+				files: [
+					'./src/raw/styles/**/*.*'
+					'./uicomponents/**/*.less'
+				]
+				tasks: [
+					'postprocess'
+				]
+			uicomponents:
+				files: ['./uicomponents/**/*.less']
 				tasks: [
 					'postprocess'
 				]
@@ -370,7 +378,7 @@ module.exports = (grunt) ->
 	grunt.registerTask 'prepare',       ['copy:uicomponents']
 	grunt.registerTask 'postprocess',   ['less', 'autoprefixer:bossout']
 	grunt.registerTask 'generate',      ['clean:out', 'shell:docpad', 'prepare', 'postprocess']
-	grunt.registerTask 'server',        ['connect', 'watch:src', 'watch:out']
+	grunt.registerTask 'server',        ['connect', 'watch:src', 'watch:out', 'watch:uicomponents']
 	grunt.registerTask 'run2',          ['generate', 'server']
 	grunt.registerTask 'run',           ['shell:docpadrun', 'prepare', 'postprocess', 'watch:less']
 	grunt.registerTask 'development',   ['prepare', 'postprocess', 'watch:less']
