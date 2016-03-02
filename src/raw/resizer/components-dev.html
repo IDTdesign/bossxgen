@@ -4,7 +4,10 @@
 <body>
 <div hidden by-vulcanize>
 <style>
-html /deep/ .layout.horizontal,html /deep/ .layout.horizontal-reverse,html /deep/ .layout.vertical,html /deep/ .layout.vertical-reverse {
+html /deep/ .layout.horizontal,
+html /deep/ .layout.horizontal-reverse,
+html /deep/ .layout.vertical,
+html /deep/ .layout.vertical-reverse {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex
@@ -13427,7 +13430,7 @@ DeviceResizer = Polymer({
         },
         _selectedTab: {
             type: String,
-            value: "all"
+            value: "window"
         },
         _selectedWidth: {
             type: String
@@ -13497,7 +13500,7 @@ DeviceResizer = Polymer({
         this._sendGaEvent("resizer", "click", "confirm content warning")
     },
     _handleLogoClick: function(e) {
-        this._selectedTab = "all",
+        this._selectedTab = "window",
         this._sendGaEvent("resizer", "click", "logo")
     },
     _urlKeyInput: function(e) {

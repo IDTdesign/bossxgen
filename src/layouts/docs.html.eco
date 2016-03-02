@@ -25,6 +25,12 @@
 </head>
 <body>
     <% #@partial('site/svgcontainer') %>
+
+    <button class="resizer-button" type="button" id="toggleDemo">
+        <iron-icon class="show" icon="device:devices"></iron-icon>
+        <iron-icon class="hide" icon="arrow-back"></iron-icon>
+    </button>
+
     <article>
         <%- @content %>
     </article>
@@ -87,13 +93,34 @@
                 size: 480
               },
               {
+                aspect: '3x2',
+                device: 'handset',
+                label: 'phone',
+                landscape: true,
+                size: 480
+              },
+              {
                 aspect: '16x9',
                 device: 'handset',
                 label: 'phone',
                 size: 360
+              },
+              {
+                device: 'window',
+                size: 320
+              },
+              {
+                aspect: '3x2',
+                device: 'handset',
+                label: 'phone',
+                size: 320
               }
             ],
             windowBreakpoints: [
+              {
+                label: 'xxsmall',
+                size: 320
+              },
               {
                 label: 'xsmall',
                 size: 480
@@ -118,9 +145,14 @@
           });
           document.getElementById('resizerblock').appendChild(resizer);
         });
+        document.getElementById('toggleDemo').addEventListener('click', function(e) {
+            e.preventDefault();
+            var bodyClass = document.querySelector('body').classList;
+            bodyClass.toggle('demo-is-opened');
+        });
     </script>
 
-    <div id="resizerblock" style="position:relative; min-height:400px;height: 100vh"></div>
+    <div id="resizerblock" class="resizer-container"></div>
 
     <%- @getBlock('scripts').add(@getUrl(@site.scripts)).add(@getUrl(@document.scripts)).toHTML() %>
 </body>

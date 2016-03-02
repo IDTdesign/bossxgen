@@ -368,7 +368,7 @@ module.exports = (grunt) ->
 	grunt.registerTask 'optimizeimg',   ['svg2png:src', 'newer:imagemin:src']
 	grunt.registerTask 'preprocess',    ['makesprites', 'optimizeimg']
 	grunt.registerTask 'prepare',       ['copy:uicomponents']
-	grunt.registerTask 'postprocess',   ['less', 'autoprefixer']
+	grunt.registerTask 'postprocess',   ['less', 'autoprefixer:bossout']
 	grunt.registerTask 'generate',      ['clean:out', 'shell:docpad', 'prepare', 'postprocess']
 	grunt.registerTask 'server',        ['connect', 'watch:src', 'watch:out']
 	grunt.registerTask 'run2',          ['generate', 'server']
