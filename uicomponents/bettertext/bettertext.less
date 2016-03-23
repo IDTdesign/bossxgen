@@ -15,7 +15,7 @@
 
     //calculations
     @lh: unit(@rythm / @fz);
-    @m-default: unit(@lh, em);
+    @m-default: unit( (unit(@rythm / @fz)), em);
 
     //headers size calculations for small screens
     @h1-fz: round( @fz * pow(@scale1, 4) );
