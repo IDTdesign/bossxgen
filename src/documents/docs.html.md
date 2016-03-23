@@ -20,6 +20,7 @@ title: "BOSSXGEN"
 
 ## Forms and flows
 
+* [Forms guidelines](/docs/forms)
 * Inputs and buttons
 * Form layouts
 
