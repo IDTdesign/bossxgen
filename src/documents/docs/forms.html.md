@@ -20,13 +20,15 @@ Forms allow users to enter data that is used by the application, or to configure
 
 ![](https://idt.invisionapp.com/static-signed/live-embed/40012101/146653053/3/latest/HsPRtloTwYlEelE3ONrFSbKH2GrmmzKUh2c5Et9dAd5CMBh7MAowFqlELoKAZOhBn8jfZT6vqC5GZ0xnsMLipXGJglE/Form-details.png)
 
-**1 - Form labels**: Use sentence case only. Default placement is above the field. Long labels should wrap and should not be truncated.
+**1 - Form labels**: For labels use capitalized case. Default placement is above the field. Long labels should wrap and should not be truncated. Labels have bold font.
 
-**2 - Optional field labels**: Most of the fields in our projects are mandatory. If all fields in the form are mandatory, don't provide any indication. If any field is optional mark it with `optional` label.
+**2 - Checkbox and radio labels:** For checkboxes or radio buttons with long labels use sentence case. Only first line is bold in multiline labels, the rest lines are normal.
 
-**3 - Form fields**: The length of the field should communicate the intended length of content. These lengths also apply for other form controls of a similar shape, like drop-down menus and text boxes.
+**3 - Optional field labels**: Most of the fields in our projects are mandatory. If all fields in the form are mandatory, don't provide any indication. If any field is optional mark it with `optional` label.
 
-**4 - Disabled fields**: Only show disabled fields if users need to know that the control might be available to them in other scenarios.
+**4 - Form fields**: The length of the field should communicate the intended length of content. These lengths also apply for other form controls of a similar shape, like drop-down menus and text boxes.
+
+**5 - Disabled fields**: Only show disabled fields if users need to know that the control might be available to them in other scenarios.
 
 **Accessibility**: Auto focus the first field by default. Users should then be able to tab through elements in the form in a logical sequence.
 
@@ -76,7 +78,7 @@ When you design a form and the control layout, think about how you want the user
 
 **2 - Form group headline**: Describes a group of controls and fields within a form that relate to each other and where users benefit from concentrating on them as a whole. Usually `h3`. This can be followed by a short paragraph of text to explain the group.
 
-**3 - End of form line**: If the form has more than one form group, a line is necessary so users understand the form actions apply to the form as a whole.
+**3 - End of form line**: If the form has more than one form group or embed buttons, a line is necessary so users understand the form actions apply to the form as a whole.
 
 **4 - Form buttons**: A form usually has a primary button for the main action, and a link button to cancel. The primary button is left aligned along with the left side of the form fields. If more actions are needed, put the primary button first, then any standard buttons, then the link button.
 
@@ -95,21 +97,21 @@ Use a single-column layout for your form when:
 
 Here's an example of a short form that uses a single-column layout:
 
-![](https://msdn.microsoft.com/dynimg/IC631811.png)
+![](https://idt.invisionapp.com/static-signed/live-embed/40012101/146967594/1/latest/FkR8DjyN25SuYzJObdfuZCLhYpONdttcRqlE9SlEo3NpkcDT02CcF34hygYeObfjlEJ57k4L7lErZONqufruAQHE6glE/Scheme-Single-column.png)
 
 ### When to use two-column layouts
 
-Use a two-column layout for short forms with limited vertical panning. The two-column layout makes the best use of screen real estate in landscape orientation. Remember to reserve ample gutter space between the two columns.
+Use a two-column layout for short forms with limited vertical panning. The two-column layout makes the best use of screen real estate in landscape orientation. Remember to reserve ample gutter space or divider line between the two columns.
 
 Here's an example of a form that uses two columns:
 
-![](https://msdn.microsoft.com/dynimg/IC631816.png)
+![](https://idt.invisionapp.com/static-signed/live-embed/40012101/146968396/1/latest/knqyZb2pEdamMHszh3GSlEEY5spmVHtG846iCccMGLUOcPdC0O6owVuxcIdVWfsfWyZs3BdhZeWlEikZERQa0lEZwlE/Scheme-Multi-column.png)
 
 Don't use multiple columns when there is extensive vertical panning. To fill out the form, the user has to reach the bottom of the first column, move to the top of the second column, and then back down again. This experience becomes even more cumbersome if the touch keyboard is displayed.
 
 Here's an example of a form that uses two columns improperly:
 
-![](https://msdn.microsoft.com/dynimg/IC631817.png)
+![](https://idt.invisionapp.com/static-signed/live-embed/40012101/146973817/22/latest/EDl2lEg6b2wfNInklCy9LP66ylEQnHs5mcGLF8yIB4zlEKRr47oiFlEWWVbia8m1GkulExAUjlEZd1gsoaalEZ9MlEBhglE/Scheme-Multi-column-avoid.png)
 
 ## Designing long forms
 
@@ -153,7 +155,7 @@ Forms must be easy to fill out. Target users often need help to clarify what inf
 
 **1 - Field error**: When a form or field submission fails, all fields responsible for the problem are shown with a red outline and an exclamation mark icon.
 
-**2 - Field error message**: The error icon behaviour is the same as the help icon (displayed on focus and on click of the icon). Error messages should be relevant to the user and human in their writing style. Do not stack error messages, but rather think about what users need to do to resolve the problem. In case the error is shown for a field that would otherwise have help text, write your message in a way that both explains the field and the error. If the error requires explanation in detail, a link should be provided to an external page (in a new browser tab). If the error explanation includes dynamic content, such as diagnostic information, it should be opened in a modal dialog.
+**2 - Field error message**: The error icon behavior is the same as the help icon (displayed on focus and on click of the icon). Error messages should be relevant to the user and human in their writing style. Do not stack error messages, but rather think about what users need to do to resolve the problem. In case the error is shown for a field that would otherwise have help text, write your message in a way that both explains the field and the error. If the error requires explanation in detail, a link should be provided to an external page (in a new browser tab). If the error explanation includes dynamic content, such as diagnostic information, it should be opened in a modal dialog.
 
 **3 - Field success indicator**: Where inline validation happens immediately, a correctly filled out field shows a success icon.
 
