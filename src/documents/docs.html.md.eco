@@ -7,20 +7,20 @@ title: "BOSSXGEN"
 
 ## Typography
 
-* [bettertext.css](/docs/bettertext) — basic styles for naked HTML
+* [bettertext.css](<%- @getUrl('/docs/bettertext') %>) — basic styles for naked HTML
 * Typography classes — responsive styles for content
 * Links
 
 ## Grid and layouts
 
 * Grid classes
-* [gutter](gutter) — adjusting grid spacings
+* [gutter](<%- @getUrl('/docs/gutter') %>) — adjusting grid spacings
 * Empty space
 * Icon + text
 
 ## Forms and flows
 
-* [Forms guidelines](/docs/forms)
+* [Forms guidelines](<%- @getUrl('docs/forms') %>)
 * Inputs and buttons
 * Form layouts
 

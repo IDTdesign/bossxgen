@@ -18,7 +18,7 @@ Forms allow users to enter data that is used by the application, or to configure
 
 ## Form details
 
-![](https://design.atlassian.com/images/forms/form-call-outs-01.png)
+![](https://idt.invisionapp.com/static-signed/live-embed/40012101/146653053/3/latest/HsPRtloTwYlEelE3ONrFSbKH2GrmmzKUh2c5Et9dAd5CMBh7MAowFqlELoKAZOhBn8jfZT6vqC5GZ0xnsMLipXGJglE/Form-details.png)
 
 **1 - Form labels**: Use sentence case only. Default placement is above the field. Long labels should wrap and should not be truncated.
 
@@ -45,7 +45,7 @@ In general, place labels above controls. When using multi-column form layouts, a
 Placing labels above controls helps establish the relationship between a label and its control and helps create a clean layout, as all labels and controls can be left-aligned. Placing labels above controls makes it easier to present long strings and handle localization and accessibility issues.
 Here are a two examples of upper label placement.
 
-![](https://msdn.microsoft.com/dynimg/IC631819.png)
+![](https://idt.invisionapp.com/static-signed/live-embed/40012101/146668323/1/latest/7efwtlwosDOLBAhaDQVceURZlECHY3jgHiCIjmsAoO4Rygf561FaFw0JxJtM944dzlEBTafkLlESoU27Ha2lEsOdQlE/Scheme-Labels-above.png)
 
 ### When to use left label placement
 
@@ -56,21 +56,21 @@ In single-column forms where vertical real estate must be conserved, place label
 
 Here's an example of a form that uses left label placement:
 
-![](https://msdn.microsoft.com/dynimg/IC631820.png)
+![](https://idt.invisionapp.com/static-signed/live-embed/40012101/146932885/2/latest/6NgBM75hqndvyM9NW86zlEglE2PIwCd9yYhybUlEjjJ2IplEGprPsZtAo6Vg1lrtkrUthwYtk8zVpJzBe3fXf3lUIglE/Scheme-Labels-left.png)
 
 Don't place labels to the left when there is a lot of variance in the length of the labels. Because some labels will be too far away from their controls or in case of wrapping labels will be taller than controls.
 
-![](https://msdn.microsoft.com/dynimg/IC631821.png)
+![](https://idt.invisionapp.com/static-signed/live-embed/40012101/146934317/5/latest/lETClEVQcI7CVRv9fkXVv7lEeETTplT7mtl6IeRLyr64PiVpTPg1IbkvzWH0dvlE1M49ezDthSZtMfM7mSnHLsit7AlE/Scheme-Labels-left-avoid.png)
 
-Don't use left label placement in multi-column form layouts. The labels themselves might look like a separate column and labels in second column might have unintended visual relationship to controls fron first column.
+Don't use left label placement in multi-column form layouts. The labels themselves might look like a separate column and labels in second column might have unintended visual relationship to controls from first column.
 
-![](https://msdn.microsoft.com/dynimg/IC631822.png)
+![](https://idt.invisionapp.com/static-signed/live-embed/40012101/146939218/1/latest/YlEkpsXWqHleONLE1BOWJ3cWvXZJqRudKwULdVMpQQPyGmxKsngQbMsEQJZIjkvB12uwSjF33HToRPdCTtCjazQlE/Scheme-Labels-left-avoid-2.png)
 
 ## Form layout
 
 When you design a form and the control layout, think about how you want the user to fill out the form and the effects panning/scrolling might have on the experience. Make sure you also consider the impact of the touch keyboard (it can use up to 50% of the screen in landscape orientation) and inline error notifications, if used.
 
-![](https://design.atlassian.com/images/forms/form-call-outs-02.png)
+![](https://idt.invisionapp.com/static-signed/live-embed/40012101/145515818/13/latest/DuMg72YcHayEcxJ14tC9PfixKawvSRsSVRxo0BBnrcRiabmRmveFAQrjib1AchZK8wlAc0LF8oNawHbmXa1PyAlE/Register-form.png)
 
 **1 - Form title**: Describes the form as a whole. If the form is the main item on a page, use an `h2` tag, otherwise use `h3` and adjust the rest of the page hierarchy accordingly. This can be followed by a short paragraph of text to introduce the form.
 
@@ -90,8 +90,8 @@ Use a single-column layout for your form when:
 
 * You want to encourage users to fill out the form in a specific order.
 * The form spans multiple pages.
-* The app is resized to a tall, narrow layout.
-* The app displays additional notes and info, instructions, or branding and advertising.
+* The window is resized to a tall, narrow layout.
+* The screen displays additional notes and info, instructions, or branding and advertising.
 
 Here's an example of a short form that uses a single-column layout:
 
