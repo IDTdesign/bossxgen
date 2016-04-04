@@ -2,9 +2,9 @@
 
 Adjust spacing between columns (applies to paddings):
 
-* `gutter-half` — twice smaller,
-* `gutter-quarter` — 4 times smaller,
-* `gutter-zero` — reset padding to 0.
+* `gutter-half-` — twice smaller,
+* `gutter-quarter-` — 4 times smaller,
+* `gutter-zero-` — reset padding to 0.
 
 Based on `@gutter-width` variable.
 
@@ -41,13 +41,15 @@ Default settings:
 
     // media breakpoints (default: as on bootstrap)
     @breakpoints:
-        "min-width: 480px",
         "min-width: 768px",
         "min-width: 992px",
         "min-width: 1200px";
 
     // names for breakpoint suffixes
     @suffixes: xs, sm, md, lg;
+
+    // IMPORTANT: suffixes count should be bigger than breakpoints count by 1
+    // suffixes-count = breakpoints-count + 1
 
     // classnames
     @gutter: gutter;
@@ -80,7 +82,6 @@ Redefining gutter-width and breakpoints:
 
     // media breakpoints
     @breakpoints:
-        "min-width: 320px",
         "min-width: 480px",
         "min-width: 768px",
         "min-width: 992px",
@@ -89,6 +90,9 @@ Redefining gutter-width and breakpoints:
 
     // names for breakpoint suffixes
     @suffixes: xxs, xs, sm, md, lg, xlg;
+
+    // IMPORTANT: suffixes count should be bigger than breakpoints count by 1
+    // suffixes-count = breakpoints-count + 1
 }
 ```
 

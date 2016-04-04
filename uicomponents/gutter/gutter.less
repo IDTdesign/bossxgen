@@ -27,13 +27,15 @@ Docs: http://codepen.io/paulradzkov/pen/VaZzBr?editors=1100
 
     // media breakpoints (default: as on bootstrap)
     @breakpoints:
-        ~"min-width: 480px",
         ~"min-width: 768px",
         ~"min-width: 992px",
         ~"min-width: 1200px";
 
     // names for breakpoint suffixes
     @suffixes: xs, sm, md, lg;
+
+    // IMPORTANT: suffixes count should be bigger than breakpoints count by 1
+    // suffixes-count = breakpoints-count + 1
 
     // classnames
     @gutter: gutter;
@@ -50,6 +52,7 @@ Docs: http://codepen.io/paulradzkov/pen/VaZzBr?editors=1100
     //calculations
     @n: length(@breakpoints); // how many breakpoints we have
     @m: length(@suffixes); // how many suffixes we have
+    @first-suffix: extract(@suffixes, 1); // first breakpoint suffix
 
     .padding-half-l()    { padding-left:  round(( @gutter-width / 4 )); }
     .padding-half-r()    { padding-right: round(( @gutter-width / 4 )); }
@@ -72,12 +75,12 @@ Docs: http://codepen.io/paulradzkov/pen/VaZzBr?editors=1100
     }
 
     // generates mobile first classes
-    .responsive(@index: @n) when (@index > 0) and (@n = @m) {
+    .responsive(@index: @m) when (@index > 1) and (@n = (@m - 1)) {
         .responsive((@index - 1)); // next iteration
         @current-suffix: extract(@suffixes, @index);
 
         // generating code
-        @media (extract(@breakpoints, @index)) {
+        @media (extract(@breakpoints, (@index - 1))) {
             .@{gutter}-@{half}-@{current-suffix}          { .padding-half(); }
             .@{gutter}-@{half}-@{left}-@{current-suffix}  { .padding-half-l(); }
             .@{gutter}-@{half}-@{right}-@{current-suffix} { .padding-half-r(); }
@@ -92,17 +95,17 @@ Docs: http://codepen.io/paulradzkov/pen/VaZzBr?editors=1100
         }
     }
 
-    .@{gutter}-@{half}          { .padding-half(); }
-    .@{gutter}-@{half}-@{left}  { .padding-half-l(); }
-    .@{gutter}-@{half}-@{right} { .padding-half-r(); }
+    .@{gutter}-@{half}-@{first-suffix}          { .padding-half(); }
+    .@{gutter}-@{half}-@{left}-@{first-suffix}  { .padding-half-l(); }
+    .@{gutter}-@{half}-@{right}-@{first-suffix} { .padding-half-r(); }
 
-    .@{gutter}-@{quarter}          { .padding-quarter(); }
-    .@{gutter}-@{quarter}-@{left}  { .padding-quarter-l(); }
-    .@{gutter}-@{quarter}-@{right} { .padding-quarter-r(); }
+    .@{gutter}-@{quarter}-@{first-suffix}          { .padding-quarter(); }
+    .@{gutter}-@{quarter}-@{left}-@{first-suffix}  { .padding-quarter-l(); }
+    .@{gutter}-@{quarter}-@{right}-@{first-suffix} { .padding-quarter-r(); }
 
-    .@{gutter}-@{null}          { .padding-null(); }
-    .@{gutter}-@{null}-@{left}  { .padding-null-l(); }
-    .@{gutter}-@{null}-@{right} { .padding-null-r(); }
+    .@{gutter}-@{null}-@{first-suffix}          { .padding-null(); }
+    .@{gutter}-@{null}-@{left}-@{first-suffix}  { .padding-null-l(); }
+    .@{gutter}-@{null}-@{right}-@{first-suffix} { .padding-null-r(); }
 
     .gutter-settings();
 
