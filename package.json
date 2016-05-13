@@ -40,6 +40,7 @@
   },
   "devDependencies": {
     "bettertext.css": "^1.0.1",
+    "grid.css": "https://github.com/paulradzkov/grid.git#79c8f058417a60d58642f0689e19f28aae4de59b",
     "bower": "~1.3.5",
     "grunt-contrib-connect": "^0.8.0",
     "grunt-shell-spawn": "^0.3.10",
