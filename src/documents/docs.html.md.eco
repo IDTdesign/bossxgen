@@ -7,7 +7,7 @@ title: "BOSSXGEN"
 
 ## Typography
 
-* [bettertext.css](<%- @getUrl('/docs/bettertext') %>) — basic styles for naked HTML
+* [bettertext.css](https://github.com/paulradzkov/bettertext.css/blob/master/README.md) — basic styles for naked HTML
 * Typography classes — responsive styles for content
 * Links
 
