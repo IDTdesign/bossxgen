@@ -2,14 +2,13 @@
 # http://docpad.org/docs/config
 
 docpadConfig = {
-	port: 7777
 	templateData:
 		site:
 			# The default title of our website.
 			title: "bossxgen"
 
 			# The production url of our website.
-			url: "http://idtdesign.github.io/bossxgen"
+			url: "//idtdesign.github.io/bossxgen"
 
 			# The website description (for SEO).
 			description: """

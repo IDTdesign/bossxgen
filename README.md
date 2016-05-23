@@ -19,34 +19,9 @@ $ grunt
 ```
 Open [http://localhost:8888/]()
 
-## Development
-
-### Prepare sprites
-
-``` bash
-grunt makesprites
-
-```
-to create sprite for icons
-
-### Image Optimization
-
-``` bash
-grunt optimizeimg
-```
-
-to minify image assets
-
-### Copy css files to main project
-
-``` bash
-grunt production
-```
-to compile, minify and copy css files to core project
-
 ## Publishing
 
-Before first publishing run this command in GIT console  
+Before first publishing run this command in GIT console
 `git remote add deploy https://login:password@github.com/IDTdesign/bossxgen.git`
 
 Where *login* and *password* is your Github credentials.
