@@ -13,7 +13,7 @@ title: "BOSSXGEN"
 
 ## Grid and layouts
 
-* Grid classes
+* [Grid classes](https://paulradzkov.github.io/grid/)
 * [gutter](<%- @getUrl('/docs/gutter') %>) — adjusting grid spacings
 * Empty space
 * Icon + text
@@ -21,7 +21,7 @@ title: "BOSSXGEN"
 ## Forms and flows
 
 * [Forms guidelines](<%- @getUrl('docs/forms') %>)
-* Inputs and buttons
+* [Inputs and buttons](<%- @getUrl('docs/form-elements') %>)
 * Form layouts
 
 ## Page layout

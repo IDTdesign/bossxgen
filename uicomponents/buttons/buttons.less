@@ -1,0 +1,182 @@
+.buttons-settings() {
+    @padding-vertical: 8px;
+    @padding-horizontal: 16px;
+    @font-size: 1em;
+    @line-height: 1.38;
+    @border-radius: 3px;
+    @btn-font-weight: bold;
+}
+
+@buttons-render: {
+    //mixins
+    // Button sizes
+    .button-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
+        padding: @padding-vertical @padding-horizontal;
+        font-size: @font-size;
+        line-height: @line-height;
+        border-radius: @border-radius;
+    }
+
+    // base styles
+    // [1] - .125em approx. equal to a half of space between words
+    // [2] - Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    .btn,
+    button:not([class]),
+    [type="button"]:not([class]),
+    [type="submit"]:not([class]),
+    [type="reset"]:not([class]),
+    [role="button"] {
+        display: inline-block;
+        margin-top: .125em; // [1]
+        margin-bottom: .125em; // [1]
+        border: 1px solid;
+        background-image: none; // [2]
+        text-align: center;
+        vertical-align: middle;
+        text-decoration: none;
+        white-space: nowrap;
+        .button-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius);
+        background: transparent;
+        color: inherit;
+        touch-action: manipulation;
+        cursor: pointer;
+        user-select: none;
+        transition: all .2s;
+
+        &:focus,
+        &.focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0,165,255,0.40);
+        }
+
+        &.disabled,
+        &[disabled] {
+            opacity: .5;
+            cursor: default;
+            pointer-events: none;
+        }
+
+        &.btn-inprogress,
+        &.disabled.btn-inprogress,
+        &[disabled].btn-inprogress {
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAABQCAYAAABrjzfBAAAABGdBTUEAALGPC/xhBQAAAfpJREFUaAXtmUFOQzEMRAsLWHEUdtz/EFyFFV0RV/nSyIp/bGeqHwlXqkhCOn2eGbooL7fb7as9Z497u/A9u9R+/96en457br1Xh5hc+XHe+3Dec+sVoOEo1UHpy6/xRngs/XvDA2Md0vNE7J7WANLHIb0C1Pa1PdXBUF8GMPoorDeLODStphnsw3oFqFykOhjui4LR25TeWcThaTWR2qf0ChBcpDqY6gvA6GVaz4o4Na2mgn1arwC7i1QH032BSHG5pDeKOD0tUsF6Sa8Am5NUB5f6ArEey2U9HfHStAcV/FzWK0Bw82xpfiOBDi73RRFQ9BBwuS8KkKJXgMrV0dbsn1w+HKT0Bd6dpncAUvoCgDS9AgRXR8vT/skLxEFaXzoBVU8AaX3pgFS9Auyujn5M+ycvEgcv+/55RK3O7gLoebimbULU/oleARrxuBPxOPiU/38Y4Hj8+Dz1ALqnRfWTdUivAAdOUh28tH8y3Czi0LQDt/RRWK8AlYVUBy/vnwx3FnF4WuWW3qb0ChBspDq4Rf9kOCvi1LTgll6m9QqwW0l1cJv+yXCjiNPT6uKtuleAz3Bwq/6NIt6qfwXYHFhOBD9mtuufjnh5WhGEB0UPHaQI/lvALfsnaRwRbxlvAcIfjLWcfiMrEW/bvyPibftXgFbx+vm0f3LvD1GWyKcOxP5LAAAAAElFTkSuQmCC);
+            background-size: 40px 80px;
+            cursor: default;
+            pointer-events: none;
+            box-shadow: none;
+            opacity: 1;
+            animation-duration: 2s;
+            animation-name: inprogress;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+    }
+
+    @keyframes inprogress {
+        from { background-position: 0    0; }
+        to   { background-position: 60px 0; }
+    }
+
+    // alternative
+    .btn-primary {
+        font-weight: @btn-font-weight;
+        text-transform: uppercase;
+        border-color: rgba(0,0,0,0.20);
+        background-color: #C10000;
+        background-image: linear-gradient(-180deg, rgba(255,0,0,1) 0%, rgba(255,0,0,0) 100%);
+        color: #FFF;
+        text-shadow: 0px 1px 1px rgba(0,0,0,0.40);
+
+        &.hover,
+        &:hover {
+            background-color: #DE0000;
+        }
+
+        &.active,
+        &:active {
+            background-color: #DE0000;
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.40);
+        }
+
+        &.disabled,
+        &[disabled] {
+            opacity: 1;
+            background-image: none;
+            text-shadow: none;
+            color: rgba(255,255,255,0.5);
+        }
+    }
+
+    .btn-default {
+        font-weight: @btn-font-weight;
+        text-transform: uppercase;
+        border-color: rgba(0,0,0,0.30);
+        background-color: #DFDFED;
+        background-image: linear-gradient(-180deg, #FEFEFF 0%, rgba(255,255,255,0) 100%);
+        color: #C10000;
+        text-shadow: 0px 1px 0px rgba(255,255,255,0.40);
+
+        &.hover,
+        &:hover {
+            background-color: #eaeaf4;
+            color: #DE0000;
+        }
+
+        &.active,
+        &:active {
+            background-color: #eaeaf4;
+            color: #DE0000;
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.40);
+        }
+
+        &.disabled,
+        &[disabled] {
+            background-color: #eaeaf4;
+            opacity: 1;
+            background-image: none;
+            text-shadow: none;
+            color: rgba(193,0,0,0.5);
+        }
+
+        &.btn-inprogress {
+            background-color: #eaeaf4;
+        }
+    }
+
+    .btn-purchase {
+        font-weight: @btn-font-weight;
+        text-transform: uppercase;
+        border-color: rgba(0,0,0,0.20);
+        background-color: #4D871D;
+        background-image: linear-gradient(-180deg, rgb(99,186,17) 0%, rgba(99,186,17,0) 100%);
+        color: #FFF;
+        text-shadow: 0px 1px 1px rgba(0,0,0,0.40);
+
+        &.hover,
+        &:hover {
+            background-color: #599826;
+        }
+
+        &.active,
+        &:active {
+            background-color: #599826;
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.40);
+        }
+
+        &.disabled,
+        &[disabled] {
+            opacity: 1;
+            background-image: none;
+            text-shadow: none;
+            color: rgba(255,255,255,0.5);
+        }
+    }
+
+    .btn-link {
+        border-color: transparent;
+    }
+
+    .buttons-settings();
+};
+
+@buttons-render();
