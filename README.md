@@ -19,6 +19,10 @@ $ grunt
 ```
 Open [http://localhost:8888/]()
 
+## Documentation
+
+Browse [uicomponents](https://github.com/IDTdesign/bossxgen/tree/master/uicomponents) folder for docs.
+
 ## Publishing
 
 Before first publishing run this command in GIT console
@@ -26,7 +30,7 @@ Before first publishing run this command in GIT console
 
 Where *login* and *password* is your Github credentials.
 
-Then run `grunt deploy` — publish to [http://IDTdesign.github.io/bossxgen]()
+Then run `grunt deploy` — publish to [https://idtdesign.github.io/bossxgen/]()
 
 More info http://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/
 
