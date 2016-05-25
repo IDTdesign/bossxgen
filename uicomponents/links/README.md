@@ -5,7 +5,7 @@ Applies colors and custom `:focus` styles for links.
 ## Usage in HTML
 
 Covers links that have not classnames (`a:not([class])`) and any tags with `.link` classname.
-Classname `.link` can be redefines via `.links-settings()` mixin.
+Classname `.link` can be redefined via `.links-settings()` mixin.
 
 ```html
 <a href="#">regular link</a>
