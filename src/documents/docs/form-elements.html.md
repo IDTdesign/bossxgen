@@ -90,8 +90,8 @@ Types of button and states:
             <th></th>
             <th><code>.btn-primary</code></th>
             <th><code>.btn-default</code></th>
-            <th><code>.btn-link</code></th>
             <th><code>.btn-purchase</code></th>
+            <th><code>.btn-link</code></th>
         </tr>
     </thead>
     <tbody>
@@ -99,43 +99,43 @@ Types of button and states:
             <th></th>
             <td><button type="button" class="btn btn-primary">Primary</button></td>
             <td><button type="button" class="btn btn-default">Default</button></td>
-            <td><button type="button" class="btn btn-link">Lika a Link</button></td>
             <td><button type="button" class="btn btn-purchase">Purchase</button></td>
+            <td><button type="button" class="btn btn-link">Like a Link</button></td>
         </tr>
         <tr>
             <th><code>:hover</code></th>
             <td><button type="button" class="btn hover btn-primary">Primary</button></td>
             <td><button type="button" class="btn hover btn-default">Default</button></td>
-            <td><button type="button" class="btn hover btn-link">Lika a Link</button></td>
             <td><button type="button" class="btn hover btn-purchase">Purchase</button></td>
+            <td><button type="button" class="btn hover btn-link">Like a Link</button></td>
         </tr>
         <tr>
             <th><code>:focus</code></th>
             <td><button type="button" class="btn focus btn-primary">Primary</button></td>
             <td><button type="button" class="btn focus btn-default">Default</button></td>
-            <td><button type="button" class="btn focus btn-link">Lika a Link</button></td>
             <td><button type="button" class="btn focus btn-purchase">Purchase</button></td>
+            <td><button type="button" class="btn focus btn-link">Like a Link</button></td>
         </tr>
         <tr>
             <th><code>:active</code></th>
             <td><button type="button" class="btn active btn-primary">Primary</button></td>
             <td><button type="button" class="btn active btn-default">Default</button></td>
-            <td><button type="button" class="btn active btn-link">Lika a Link</button></td>
             <td><button type="button" class="btn active btn-purchase">Purchase</button></td>
+            <td><button type="button" class="btn active btn-link">Like a Link</button></td>
         </tr>
         <tr>
             <th><code>[disabled]</code></th>
             <td><button type="button" disabled class="btn btn-primary">Primary</button></td>
             <td><button type="button" disabled class="btn btn-default">Default</button></td>
-            <td><button type="button" disabled class="btn btn-link">Lika a Link</button></td>
             <td><button type="button" disabled class="btn btn-purchase">Purchase</button></td>
+            <td><button type="button" disabled class="btn btn-link">Like a Link</button></td>
         </tr>
         <tr>
             <th><code>.btn-inprogress</code></th>
             <td><button type="button" class="btn btn-inprogress btn-primary">Primary</button></td>
             <td><button type="button" class="btn btn-inprogress btn-default">Default</button></td>
-            <td><button type="button" class="btn btn-inprogress btn-link">Lika a Link</button></td>
             <td><button type="button" class="btn btn-inprogress btn-purchase">Purchase</button></td>
+            <td><button type="button" class="btn btn-inprogress btn-link">Like a Link</button></td>
         </tr>
     </tbody>
 </table>
@@ -148,8 +148,8 @@ Types of button and states:
             <th></th>
             <th><code>.btn-primary</code></th>
             <th><code>.btn-default</code></th>
-            <th><code>.btn-link</code></th>
             <th><code>.btn-purchase</code></th>
+            <th><code>.btn-link</code></th>
         </tr>
     </thead>
     <tbody>
@@ -157,43 +157,43 @@ Types of button and states:
             <th></th>
             <td><a href="#" class="btn btn-primary">Primary</a></td>
             <td><a href="#" class="btn btn-default">Default</a></td>
-            <td><a href="#" class="btn btn-link">Lika a Link</a></td>
             <td><a href="#" class="btn btn-purchase">Purchase</a></td>
+            <td><a href="#" class="btn btn-link">Like a Link</a></td>
         </tr>
         <tr>
             <th><code>:hover</code></th>
             <td><a href="#" class="btn hover btn-primary">Primary</a></td>
             <td><a href="#" class="btn hover btn-default">Default</a></td>
-            <td><a href="#" class="btn hover btn-link">Lika a Link</a></td>
             <td><a href="#" class="btn hover btn-purchase">Purchase</a></td>
+            <td><a href="#" class="btn hover btn-link">Like a Link</a></td>
         </tr>
         <tr>
             <th><code>:focus</code></th>
             <td><a href="#" class="btn focus btn-primary">Primary</a></td>
             <td><a href="#" class="btn focus btn-default">Default</a></td>
-            <td><a href="#" class="btn focus btn-link">Lika a Link</a></td>
             <td><a href="#" class="btn focus btn-purchase">Purchase</a></td>
+            <td><a href="#" class="btn focus btn-link">Like a Link</a></td>
         </tr>
         <tr>
             <th><code>:active</code></th>
             <td><a href="#" class="btn active btn-primary">Primary</a></td>
             <td><a href="#" class="btn active btn-default">Default</a></td>
-            <td><a href="#" class="btn active btn-link">Lika a Link</a></td>
             <td><a href="#" class="btn active btn-purchase">Purchase</a></td>
+            <td><a href="#" class="btn active btn-link">Like a Link</a></td>
         </tr>
         <tr>
             <th><code>[disabled]</code></th>
             <td><a href="#" disabled class="btn btn-primary">Primary</a></td>
             <td><a href="#" disabled class="btn btn-default">Default</a></td>
-            <td><a href="#" disabled class="btn btn-link">Lika a Link</a></td>
             <td><a href="#" disabled class="btn btn-purchase">Purchase</a></td>
+            <td><a href="#" disabled class="btn btn-link">Like a Link</a></td>
         </tr>
         <tr>
             <th><code>.btn-inprogress</code></th>
             <td><a href="#" class="btn btn-inprogress btn-primary">Primary</a></td>
             <td><a href="#" class="btn btn-inprogress btn-default">Default</a></td>
-            <td><a href="#" class="btn btn-inprogress btn-link">Lika a Link</a></td>
             <td><a href="#" class="btn btn-inprogress btn-purchase">Purchase</a></td>
+            <td><a href="#" class="btn btn-inprogress btn-link">Like a Link</a></td>
         </tr>
     </tbody>
 </table>
@@ -264,5 +264,52 @@ Special type of primary button. Green color indicates payments, money charges or
         </figcaption>
     </figure>
 </details>
+
+#### `.btn-inprogress`
+
+<p><input type="submit" class="btn btn-purchase btn-inprogress" value="Purchase"></p>
+
+```html
+<input type="submit" class="btn btn-purchase btn-inprogress" value="Purchase">
+```
+
+Additional state of disabled button. Applies to any button type. Use to indicate that process is running and to avoid double form submission. Class `.btn-inprogress` added with javascript. See example below.
+
+<p>
+    <button class="btn btn-default js-printbutton">Print this page</button>
+</p>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        function stopInprogress(target) {
+            var target;
+            target.removeClass('btn-inprogress').removeAttr('disabled');
+        }
+        $('.js-printbutton').click(function () {
+            $(this).addClass('btn-inprogress').attr('disabled', 'disabled');
+            setTimeout(function () { window.print(); }, 3000);
+            setTimeout(function () { stopInprogress($('.js-printbutton')) }, 3000);
+        });
+    });
+</script>
+
+```html
+<p><button class="btn btn-default js-printbutton">Print this page</button></p>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        function stopInprogress(target) {
+            var target;
+            target.removeClass('btn-inprogress').removeAttr('disabled');
+        }
+        $('.js-printbutton').click(function () {
+            $(this).addClass('btn-inprogress').attr('disabled', 'disabled');
+            setTimeout(function () { window.print(); }, 3000);
+            setTimeout(function () { stopInprogress($('.js-printbutton')) }, 3000);
+        });
+    });
+</script>
+```
+
 
 ### Button sizes

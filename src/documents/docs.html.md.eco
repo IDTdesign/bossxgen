@@ -9,12 +9,12 @@ title: "BOSSXGEN"
 
 * [bettertext.css](https://github.com/paulradzkov/bettertext.css/blob/master/README.md) — basic styles for naked HTML
 * Typography classes — responsive styles for content
-* Links
+* [Links](https://github.com/idtdesign/bossxgen/blob/master/uicomponents/links/)
 
 ## Grid and layouts
 
 * [Grid classes](https://paulradzkov.github.io/grid/)
-* [gutter](<%- @getUrl('/docs/gutter') %>) — adjusting grid spacings
+* [gutter](https://github.com/idtdesign/bossxgen/blob/master/uicomponents/gutter) — adjusting grid spacings
 * Empty space
 * Icon + text
 
