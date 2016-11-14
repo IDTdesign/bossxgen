@@ -1,0 +1,36 @@
+@import (less) "./node_modules/normalize.css/normalize.css";
+@import (less) "./node_modules/bettertext.css/bettertext.less";
+
+.bettertext-settings() {
+
+    //settings
+    @fz: 16px;
+    @fz-small: 0.8em;
+    @rythm: 20px;
+    @linel: 50em;
+    @font-body: sans-serif;
+    @font-headers: sans-serif;
+    @scale1: 1.125;
+    @scale2: 1.250;
+    @section-pad: 5vw;
+    @bettertext-breakpoint: ~"(min-width: 768px)";
+
+    @lh: 1.4;
+    @m-default: 20px;
+}
+
+@import (less) "./node_modules/grid.css/grid.less";
+
+//our local components
+@import (less) "./uicomponents/links/links.less";
+@import (less) "./uicomponents/buttons/buttons.less";
+
+
+// docs specific css
+@import (less) "_highlight.less";
+@import (less) "_github.less";
+@import (less) "_resizer.less";
+
+* {
+    box-sizing: border-box;
+}

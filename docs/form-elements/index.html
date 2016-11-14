@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+<head>
+    <!-- Rendered with Eco -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Properities -->
+    <title>bossxgen</title>
+    <meta name="description" content="bossxgen frontend templates" />
+    <meta name="keywords" content="idt,boss,revolution" />
+
+    <!-- DocPad Meta -->
+    <meta name="generator" content="DocPad v6.78.4" />
+
+    <!-- DocPad Styles + Our Own -->
+    <link  rel="stylesheet" href="//idtdesign.github.io/bossxgen/styles/docs.css" />
+
+    <!--script src="//idtdesign.github.io/bossxgen/vendor/modernizr/modernizr.min.js"></script>
+    <script src="//idtdesign.github.io/bossxgen/icons/svg-icons.js"></script-->
+
+    <script src="/resizer/webcomponents-lite.min.js"></script>
+    <link rel="import" href="/resizer/components.html">
+
+</head>
+<body>
+    
+    <article>
+        <h1 id="form-elements">Form elements</h1>
+<p>On this page:</p>
+<nav>
+    <ul>
+        <li><a href="#buttons">Buttons</a>
+            <ul>
+                <li><a href="#button-types">Types</a></li>
+                <li><a href="#button-sizes">Sizes</a></li>
+            </ul>
+        </li>
+        <li><a href="#inputs">Inputs</a></li>
+        <li><a href="#">other</a></li>
+        <li><a href="#">more</a></li>
+    </ul>
+</nav>
+
+<h2 id="buttons">Buttons</h2>
+<p>Generic button without theme:</p>
+<p>
+    <a href="#" class="btn">a.btn</a>
+</p>
+<p>
+    <button>button</button>
+    <button type="button">button type=&#39;button&#39;</button>
+    <button type="submit">button type=&#39;submit&#39;</button>
+    <button type="reset">button type=&#39;reset&#39;</button>
+    <button class="btn">button.btn</button>
+</p>
+<p>
+    <input type="button" value="input type='button'">
+    <input type="submit" value="input type='submit'">
+    <input type="reset" value="input type='reset'">
+    <input type="button" class="btn" value="input.btn">
+</p>
+
+<div style="margin: 0 -5vw; padding: 1.5em 5vw; background: #333; color: #FFF">
+    <p>
+        <a href="#" class="btn">a.btn</a>
+    </p>
+    <p>
+        <button>button</button>
+        <button type="button">button type=&#39;button&#39;</button>
+        <button type="submit">button type=&#39;submit&#39;</button>
+        <button type="reset">button type=&#39;reset&#39;</button>
+        <button class="btn">button.btn</button>
+    </p>
+    <p>
+        <input type="button" value="input type='button'">
+        <input type="submit" value="input type='submit'">
+        <input type="reset"  value="input type='reset'">
+        <input type="button" value="input.btn" class="btn">
+    </p>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn"</span>&gt;</span>a.btn<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span>&gt;</span>button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span>&gt;</span>button type='button'<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span>&gt;</span>button type='submit'<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"reset"</span>&gt;</span>button type='reset'<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn"</span>&gt;</span>button.btn<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"input type='button'"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"input type='submit'"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"reset"</span>  <span class="hljs-attribute">value</span>=<span class="hljs-value">"input type='reset'"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"input.btn"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn"</span>&gt;</span>
+</code></pre>
+<p>Some words in one line with <button class="btn">some</button> <button class="btn">buttons</button> should be visually aligned by baseline.</p>
+
+<h3 id="button-types">Button types</h3>
+<p>Types of button and states:</p>
+<table>
+    <caption>Buttons with style classes</caption>
+    <thead>
+        <tr>
+            <th></th>
+            <th><code>.btn-primary</code></th>
+            <th><code>.btn-default</code></th>
+            <th><code>.btn-purchase</code></th>
+            <th><code>.btn-link</code></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th></th>
+            <td><button type="button" class="btn btn-primary">Primary</button></td>
+            <td><button type="button" class="btn btn-default">Default</button></td>
+            <td><button type="button" class="btn btn-purchase">Purchase</button></td>
+            <td><button type="button" class="btn btn-link">Like a Link</button></td>
+        </tr>
+        <tr>
+            <th><code>:hover</code></th>
+            <td><button type="button" class="btn hover btn-primary">Primary</button></td>
+            <td><button type="button" class="btn hover btn-default">Default</button></td>
+            <td><button type="button" class="btn hover btn-purchase">Purchase</button></td>
+            <td><button type="button" class="btn hover btn-link">Like a Link</button></td>
+        </tr>
+        <tr>
+            <th><code>:focus</code></th>
+            <td><button type="button" class="btn focus btn-primary">Primary</button></td>
+            <td><button type="button" class="btn focus btn-default">Default</button></td>
+            <td><button type="button" class="btn focus btn-purchase">Purchase</button></td>
+            <td><button type="button" class="btn focus btn-link">Like a Link</button></td>
+        </tr>
+        <tr>
+            <th><code>:active</code></th>
+            <td><button type="button" class="btn active btn-primary">Primary</button></td>
+            <td><button type="button" class="btn active btn-default">Default</button></td>
+            <td><button type="button" class="btn active btn-purchase">Purchase</button></td>
+            <td><button type="button" class="btn active btn-link">Like a Link</button></td>
+        </tr>
+        <tr>
+            <th><code>[disabled]</code></th>
+            <td><button type="button" disabled class="btn btn-primary">Primary</button></td>
+            <td><button type="button" disabled class="btn btn-default">Default</button></td>
+            <td><button type="button" disabled class="btn btn-purchase">Purchase</button></td>
+            <td><button type="button" disabled class="btn btn-link">Like a Link</button></td>
+        </tr>
+        <tr>
+            <th><code>.btn-inprogress</code></th>
+            <td><button type="button" class="btn btn-inprogress btn-primary">Primary</button></td>
+            <td><button type="button" class="btn btn-inprogress btn-default">Default</button></td>
+            <td><button type="button" class="btn btn-inprogress btn-purchase">Purchase</button></td>
+            <td><button type="button" class="btn btn-inprogress btn-link">Like a Link</button></td>
+        </tr>
+    </tbody>
+</table>
+
+
+<table>
+    <caption>Links styled as buttons</caption>
+    <thead>
+        <tr>
+            <th></th>
+            <th><code>.btn-primary</code></th>
+            <th><code>.btn-default</code></th>
+            <th><code>.btn-purchase</code></th>
+            <th><code>.btn-link</code></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th></th>
+            <td><a href="#" class="btn btn-primary">Primary</a></td>
+            <td><a href="#" class="btn btn-default">Default</a></td>
+            <td><a href="#" class="btn btn-purchase">Purchase</a></td>
+            <td><a href="#" class="btn btn-link">Like a Link</a></td>
+        </tr>
+        <tr>
+            <th><code>:hover</code></th>
+            <td><a href="#" class="btn hover btn-primary">Primary</a></td>
+            <td><a href="#" class="btn hover btn-default">Default</a></td>
+            <td><a href="#" class="btn hover btn-purchase">Purchase</a></td>
+            <td><a href="#" class="btn hover btn-link">Like a Link</a></td>
+        </tr>
+        <tr>
+            <th><code>:focus</code></th>
+            <td><a href="#" class="btn focus btn-primary">Primary</a></td>
+            <td><a href="#" class="btn focus btn-default">Default</a></td>
+            <td><a href="#" class="btn focus btn-purchase">Purchase</a></td>
+            <td><a href="#" class="btn focus btn-link">Like a Link</a></td>
+        </tr>
+        <tr>
+            <th><code>:active</code></th>
+            <td><a href="#" class="btn active btn-primary">Primary</a></td>
+            <td><a href="#" class="btn active btn-default">Default</a></td>
+            <td><a href="#" class="btn active btn-purchase">Purchase</a></td>
+            <td><a href="#" class="btn active btn-link">Like a Link</a></td>
+        </tr>
+        <tr>
+            <th><code>[disabled]</code></th>
+            <td><a href="#" disabled class="btn btn-primary">Primary</a></td>
+            <td><a href="#" disabled class="btn btn-default">Default</a></td>
+            <td><a href="#" disabled class="btn btn-purchase">Purchase</a></td>
+            <td><a href="#" disabled class="btn btn-link">Like a Link</a></td>
+        </tr>
+        <tr>
+            <th><code>.btn-inprogress</code></th>
+            <td><a href="#" class="btn btn-inprogress btn-primary">Primary</a></td>
+            <td><a href="#" class="btn btn-inprogress btn-default">Default</a></td>
+            <td><a href="#" class="btn btn-inprogress btn-purchase">Purchase</a></td>
+            <td><a href="#" class="btn btn-inprogress btn-link">Like a Link</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3 id="usage">Usage</h3>
+<h4 id="-btn-primary-"><code>.btn-primary</code></h4>
+<p><input type="submit" class="btn btn-primary" value="Primary Action"></p>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-primary"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Primary Action"</span>&gt;</span>
+</code></pre>
+<p>The main button in the form, it triggers primary action. It is possible to have two or more primary buttons on the <em>page</em> when the page has two or more different forms. But should be only one primary button in the <em>form</em>.</p>
+<p>In HTML this is usually <code>type=&quot;submit&quot;</code>.</p>
+<details>
+    <summary>Usage example</summary>
+    <figure>
+        <img src="https://idt.invisionapp.com/static-signed/live-embed/40012101/116144344/11/latest/I8PpULzOAk3SnqcU2icQelL5LiCcHlEPkIFxQEvVaHC1e30TTTcCoNXVpdbDLN92sBYBBT8fj81paT5nr7ctQgQlE/intBillPay-4.png" alt="">
+
+        <figcaption>
+        This page has general Search form and New transaction form. Both forms have primary button.
+        </figcaption>
+    </figure>
+</details>
+
+
+<h4 id="-btn-default-"><code>.btn-default</code></h4>
+<p><input type="submit" class="btn btn-default" value="Additional Action"></p>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Additional Action"</span>&gt;</span>
+</code></pre>
+<p>Any additional (not primary) button in the form. For example &#39;Clear&#39; or &#39;Print&#39; buttons.</p>
+<h4 id="-btn-link-"><code>.btn-link</code></h4>
+<p><a href="#" class="btn btn-link">Back</a></p>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#back"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-link"</span>&gt;</span>Back<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+</code></pre>
+<p>Use this type for &#39;buttons&#39; like &#39;Cancel&#39; or &#39;Back&#39; in multiscreen forms. In HTML code <code>.btn-link</code> usually is a link tag that has dimensions like a button.</p>
+<h4 id="-btn-purchase-"><code>.btn-purchase</code></h4>
+<p><input type="submit" class="btn btn-purchase" value="Purchase"></p>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-purchase"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Purchase"</span>&gt;</span>
+</code></pre>
+<p>Special type of primary button. Green color indicates payments, money charges or adding a service to user&#39;s account. Should be used only for purchase action.</p>
+<details>
+    <summary>Usage example</summary>
+    <figure>
+        <img src="https://idt.invisionapp.com/static-signed/live-embed/40012101/116144346/10/latest/qsGbz46aH8mvFJYJCpu1rmzvgk6SZlEbF6kCSEvAwTrfzuuplEcyYYTqEqSOvchUqWV066NhWJ1s15gzEEkCzUiwlE/intBillPay-confirm.png" alt="">
+
+        <figcaption>
+        &#39;Submit&#39; button on this screen indicates money charge from user account.
+        </figcaption>
+    </figure>
+</details>
+
+<h4 id="-btn-inprogress-"><code>.btn-inprogress</code></h4>
+<p><input type="submit" class="btn btn-purchase btn-inprogress" value="Purchase"></p>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-purchase btn-inprogress"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Purchase"</span>&gt;</span>
+</code></pre>
+<p>Additional state of disabled button. Applies to any button type. Use to indicate that process is running and to avoid double form submission. Class <code>.btn-inprogress</code> added with javascript. See example below.</p>
+<p><p>
+    <button class="btn btn-default js-printbutton">Print this page</button>
+</p></p>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        function stopInprogress(target) {
+            var target;
+            target.removeClass('btn-inprogress').removeAttr('disabled');
+        }
+        $('.js-printbutton').click(function () {
+            $(this).addClass('btn-inprogress').attr('disabled', 'disabled');
+            setTimeout(function () { window.print(); }, 3000);
+            setTimeout(function () { stopInprogress($('.js-printbutton')) }, 3000);
+        });
+    });
+</script>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default js-printbutton"</span>&gt;</span>Print this page<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"https://code.jquery.com/jquery-2.2.4.min.js"</span> <span class="hljs-attribute">integrity</span>=<span class="hljs-value">"sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="</span> <span class="hljs-attribute">crossorigin</span>=<span class="hljs-value">"anonymous"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+    $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">stopInprogress</span><span class="hljs-params">(target)</span> </span>{
+            <span class="hljs-keyword">var</span> target;
+            target.removeClass(<span class="hljs-string">'btn-inprogress'</span>).removeAttr(<span class="hljs-string">'disabled'</span>);
+        }
+        $(<span class="hljs-string">'.js-printbutton'</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+            $(<span class="hljs-keyword">this</span>).addClass(<span class="hljs-string">'btn-inprogress'</span>).attr(<span class="hljs-string">'disabled'</span>, <span class="hljs-string">'disabled'</span>);
+            setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{ <span class="hljs-built_in">window</span>.print(); }, <span class="hljs-number">3000</span>);
+            setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{ stopInprogress($(<span class="hljs-string">'.js-printbutton'</span>)) }, <span class="hljs-number">3000</span>);
+        });
+    });
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+<h3 id="button-sizes">Button sizes</h3>
+
+    </article>
+
+    
+</body>
+</html>
